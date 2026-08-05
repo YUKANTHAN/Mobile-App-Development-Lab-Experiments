@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true" />
+    
+    <TextView
+        android:id="@+id/leftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/centerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/horizontalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horizontal Center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topText"/>
+    <TextView
+        android:id="@+id/belowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below Top Text"
+        android:layout_below="@+id/topText"
+        android:layout_marginTop="40dp" />
+    <TextView
+        android:id="@+id/aboveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Above Bottom Text"
+        android:layout_above="@+id/bottomText" />
+    <TextView
+        android:id="@+id/rightOfCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right of Button"
+        android:layout_toEndOf="@+id/centerButton"
+        android:layout_above="@+id/rightText"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/leftOfCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left of Button"
+        android:layout_toStartOf="@+id/centerButton"
+        android:layout_above="@+id/leftText"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp" />
+    </RelativeLayout>
